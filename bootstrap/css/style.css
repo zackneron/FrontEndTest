@@ -1,0 +1,247 @@
+/*====== Fonts declaration ============ */
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../../roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Georgia-Italic";
+  src: url("../../georgia/georgia-italic.ttf");
+}
+
+/*---------------------------------------*/
+
+body {
+  background: url(../../image-assets/page-background.jpg) no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  object-fit: cover;
+  color: #fff;
+  font-family: "Roboto Light", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.header-section {
+  border-bottom: 2px solid rgb(151, 172, 187);
+}
+.site-logo {
+  max-width: 50px;
+}
+
+.text-blue73 {
+  color: rgb(151, 172, 187);
+}
+
+h1 {
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: 'Roboto-Medium', "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-size: 17px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.content-section h4 {
+  font-family: 'Roboto Light', "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+
+.content-section p {
+  margin-bottom: 30px;
+}
+
+h4.content-title {
+  font-size: 21px;
+  font-family: 'Roboto-Medium', "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+
+.content-time h5 {
+  font-family: "Georgia-Italic", "Helvetica Neue", Helvetica,Arial,sans-serif;
+  border-bottom: 2px solid rgb(158, 218, 182);
+  max-width: 43px;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #ebeff0;
+  font-size: 15px;
+}
+
+.btn-event {
+  border: 1px solid rgb(151, 172, 187);
+  border-radius: 0;
+  color:rgb(151, 172, 187);
+  margin-bottom: 40px;
+}
+.btn-event:hover {
+  color:#fff;
+}
+
+/*----- Tasks section */
+
+.tasks h4 {
+  font-size: 21px;
+}
+
+.task-details h4 {
+  text-indent: -15px;
+}
+
+
+.list-inline li a {
+  font-family: 'Roboto-Medium', "Helvetica Neue", Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #ebeff0;
+  font-size: 17px;
+}
+.list-inline li.active a {
+  color: #fff;
+  font-size: 25px;
+  border-bottom: 2px solid rgb(158, 218, 182);
+}
+
+.green-bullet::before {
+  content:"\f111";
+  font-family: "fontAwesome";
+  padding-right: 5px;
+  color: rgb(158, 218, 182);
+  font-size: 10px;
+}
+
+.blue-bullet::before {
+  content:"\f111";
+  font-family: "fontAwesome";
+  padding-right: 5px;
+  color: rgb(68, 145, 181);
+  font-size: 10px;
+}
+
+/*----------- Side content ----- */
+
+.completed-text {
+  color: rgb(158, 218, 182);
+}
+.outstanding-text {
+  color: rgb(68, 145, 181);
+}
+.side-content .content-title {
+  font-family: 'Roboto Light', "Helvetica Neue", Helvetica,Arial,sans-serif;
+}
+
+
+/* Small devices (tablets, 480px and up) ----------------------------------- */
+@media (min-width: 0px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+
+  .content-time h5 {
+    font-size: 15px;
+  }
+
+  .header-section {
+    margin: 35px 0;
+  }
+  .site-logo {
+    margin-bottom: 30px;
+    float: left;
+  }
+  .btn-event {
+    width:100%;
+    font-size: 12px;
+  }
+
+  .side-content {
+    text-align: left;
+  }
+  .side-content .content-title {
+    font-size: 17px;
+  }
+  .side-content p {
+    font-size: 30px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) ----------------------------------- */
+@media (min-width: 768px) {
+  .site-logo {
+    float: right;
+    position: relative;
+    top: 30px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 21px;
+  }
+  .content-time h5 {
+    font-size: 19px;
+  }
+
+  .btn-event {
+    width: 142px;
+    font-size: 14px;
+  }
+
+  .side-content {
+    text-align: right;
+  }
+  .side-content .content-title {
+    font-size: 21px;
+  }
+  .side-content p {
+    font-size: 36px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) --------------------------------- */
+@media (min-width: 992px) {
+  .header-section {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 130px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h4.content-title {
+    font-size: 26px;
+  }
+  .content-time h5 {
+    font-size: 22px;
+  }
+  .side-content .content-title {
+    font-size: 26px;
+  }
+  .side-content p {
+    font-size: 45px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) --------------------------- */
+@media (min-width: 1200px) {}
